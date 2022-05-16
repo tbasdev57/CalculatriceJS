@@ -1,0 +1,58 @@
+* {
+    font-family: monospace;
+}
+
+.calculatrice {
+    margin: auto;
+    width: 500px;
+    background-color: dimgrey;
+}
+
+.affichage {
+    margin: auto;
+    height: 30px;
+    color: white;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+/* Class pour le conteneur global des boutons*/
+.boutons {
+    display: flex;
+    background-color: antiquewhite;
+    margin: auto;
+}
+
+/* Classe pour un bouton uniques */
+.bouton {
+    display: inline-block;
+    border-radius: 5px;
+    width: 80px;
+    height: 35px;
+    background-color: grey;
+    color: antiquewhite;
+    text-align: center;
+    margin: 5px;
+    line-height: 35px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.bouton:hover {
+    background-color: darkslategrey;
+}
+
+.bouton:active {
+    background-color: grey;
+}
+
+/* Classe pour les boutons numériques et le point */
+.btnNum {
+    width: 300px;
+}
+
+/* Classe pour les boutons de fonction */
+.btnFunc {
+    width: 200px;
+}

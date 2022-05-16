@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<!-- Chargement du programme au chargement de la page via la fonction main() -->
+
+<body onload="main()">
+    <!-- Conteneur global de la calculatrice -->
+    <div class="calculatrice">
+        <!-- Conteneur pour l'affichage -->
+        <div class="affichage" id="affichage">0</div>
+        <!-- Conteneur pour les boutons -->
+        <div class="boutons">
+            <!-- Conteneur  pour les boutons numériques -->
+            <div class="btnNum">
+                <!-- Les boutons numériques sont divisés en lignes -->
+                <div class="btnLine">
+                    <div class="bouton" onclick="calc.addDigit('7')">7</div>
+                    <div class="bouton" onclick="calc.addDigit('8')">8</div>
+                    <div class="bouton" onclick="calc.addDigit('9')">9</div>
+                </div>
+                <div class="btnLine">
+                    <div class="bouton" onclick="calc.addDigit('4')">4</div>
+                    <div class="bouton" onclick="calc.addDigit('5')">5</div>
+                    <div class="bouton" onclick="calc.addDigit('6')">6</div>
+                </div>
+                <div class="btnLine">
+                    <div class="bouton" onclick="calc.addDigit('1')">1</div>
+                    <div class="bouton" onclick="calc.addDigit('2')">2</div>
+                    <div class="bouton" onclick="calc.addDigit('3')">3</div>
+                </div>
+                <div class="btnLine">
+                    <div class="bouton" onclick="calc.addDigit('0')">0</div>
+                    <div class="bouton" onclick="calc.addDigit('.')">.</div>
+                    <div class="bouton" onclick="calc.invertSign()">±</div>
+                </div>
+            </div>
+            <!-- Conteneur pour les boutons de fonction -->
+            <div class="btnFunc">
+                <div class="btnLine"></div>
+                <div class="bouton" onclick="calc.setOperation('+')">+</div>
+                <div class="bouton" onclick="calc.clearOperand()">CE</div>
+                <div class="bouton" onclick="calc.setOperation('-')">-</div>
+                <div class="bouton" onclick="calc.clearAllOps()">C</div>
+                <div class="bouton" onclick="calc.setOperation('*')">×</div>
+                <div class="bouton" onclick="calc.removeDigit()">←</div>
+                <div class="bouton" onclick="calc.setOperation('/')">÷</div>
+                <div class="bouton" onclick="calc.setOperation('=')">=</div>
+            </div>
+        </div>
+    </div>
+    <!-- Intégration du script de la calculatrice -->
+    <script src="js/Calculatrice.js"></script>
+</body>
+
+</html>
